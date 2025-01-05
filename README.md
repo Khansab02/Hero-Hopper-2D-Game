@@ -1,2 +1,2 @@
 # Hero Hopper-2D Game
- Hello, Its a simple 2D game with one complete level. Detail in Readme file.
+Its A complete One level 2D game with a Game menu,Pause menu,Game Over Screen..
