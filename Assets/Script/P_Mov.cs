@@ -59,7 +59,6 @@ public class P_Mov : MonoBehaviour
             rb.AddForce(Vector3.up * jumpspeed,ForceMode.Impulse);
            isGrounded = false;
         }
-            isGrounded=true;
         transform.position += movdir * speed * Time.deltaTime;
     }
     void Flip()
@@ -82,6 +81,7 @@ public class P_Mov : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        isGrounded = true;
         // Prevent the player from moving or rotating when colliding with other objects
         if (collision.gameObject.layer == LayerMask.NameToLayer("Obstacle")) // Change "Obstacle" to your desired layer
         {
